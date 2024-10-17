@@ -26,9 +26,7 @@
 					<b>Welcome to my website</b><br /></h1>
 				</div>
 				<div class="labeled-icons">
-						<b>800 East Lancaster Rd.<br />
-						Villanova, PA 19085<br />
-						United States<br />
+						<b>
 						443-391-6440 <br />
 						hkokkina@villanova.edu</b>
 				</div>
@@ -57,23 +55,6 @@
 							I am also teaching myself game design in Unreal Engine 5 where I am working on my own RPG. 
 							Finally, I currently a teaching assistant for the department of electrical and computer engineering here at Villanova.-->
 						</p>
-						<header class="major">
-							<h2>Experience</h2>
-						</header>
-						<p>
-							For my most recent internship during 2023, I worked at <a href="https://www.jhuapl.edu/">The Johns Hopkins Applied Physics Lab</a> in the Air and Missile Defense Sector as a software engineer. I contributed to the development of machine learning models which aimed to decrease the runtime of missile trajectory calculation. I also designed protocol for modules within software designed by APL and Lockheed known as <a href="https://www.youtube.com/watch?v=dkGYq1kUNcY">Cerberus</a>.
-						</p>
-						<p>
-							During the summer of 2022, I worked at <a href="https://www.dcscorp.com/">DCS Corporation</a> as a software engineer. My first project of the summer was creating 3D assets for a virtual reality software used by the military called <a href="https://virtualheroes.com/cs-virtual-tactical-assault-kit/">Virtual Tactical Assault Kit</a>. Then, I helped debug and add functionality to an android application used to read and track radiation sensors. I also worked on developing extentions to an another military application called <a href="https://www.civtak.org/">Android Team Awareness Kit</a>. Finally, I developed a brand new augmented reality application used to create sampling missions for ground troops in areas effected by hazardous warfare. More info on this can be found below.
-						</p>
-						<p>
-							In the summer of 2021 I worked at <a href="https://www.stanleyblackanddecker.com/">Stanley Black and Decker</a> as an electrical engineer. I had the opportunity to work on a team of mechanical and electrical engineers developing new hand tools. During the summer, I 3D-printed parts for tools, tested circuits, and designed testing modules to aid the design of various equipment. I also worked in a multidisciplinary project in which I led a group of finance, buisness, and engineering interns. We developed a marking strategy based on sales data we analyzed using a machine learning algorithm in Python.
-						</p>
-						
-						<!-- <ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul> -->
-					</section>
 
 				<!-- Two -->
 					<section id="two">
@@ -85,14 +66,32 @@
 								3. 
 							 -->
 							 <article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/HMI.jpg" class="image fit thumb"><img src="images/thumbs/HMI.jpg" alt="" /></a>
-								<h3>Human Computer Interface Senior Design Capstone</h3>
-								<p> During my Junior and Senior Year, I worked on a team with five Villanova engineers to provide a solution for individuals with compromised
-									upper limbs. We developed a prototype for a predictive prosthetic limb which reads and interprets brain signals as an input method to a robotic 
-									arm. We established a pipeline of reading user data from biomedical sensors, filtering out any noise and cleaning the data in preprocessing, 
-									interpreting the data into classification/predictions of user movement with machine learning in post processing, and finally translated the predictions
-									to motor controls on the arm in Arduino. Once completed, we selected users to test the arm which achieved a 91% accuracy on its first trial run, well above the 80% 
-									expected accuracy for a class A medical device. After testing, we finished a research paper and formal presentation to present all the discoveries and implications of the project   </p>
+								<a href="https://vimeo.com/1020405046?share=copy#t=0" class="image fit thumb"><img src="images/thumbs/hw5.jpg" alt="" /></a>
+								<h3>OpenGL Post Processing Effects with Custom Vertex and Fragment Shaders</h3>
+								<p>This video showcases a project where I implemented a variety of post processing effects as well as some vertex and fragment shaders.
+									This project was done in OpenGL and C++. A framework code base was given to me and I was responsible for understanding the base code so that I could implement these concepts. The vertex and fragment shaders calculated
+									the visual effect for blinn-phong lighting and also performed texture sampling for matcap. The last surface shader is a custom one which deforms the vertices by mixing values between the base model and a sphere while 
+									interpolating color based on time and distance from the center of the frame. Post processing effects can then be applied to the surface shaded frame. These included a sobel and gaussian blur filter along with a custom 
+									filter which applies a worley noise based effect creating a mosaic-like image
+								</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="https://vimeo.com/1020403716" class="image fit thumb"><img src="images/thumbs/hw3.jpg" alt="" /></a>
+								<h3>C++ Rasterizer and Custom Lighting</h3>
+								<p> The video above displays a project in which I implemented the an entire rasterizer pipeline in C++ and OpenGL. I was given a base code in which I 
+									needed to analyze and implement my own full 2D and 3D rasterizer. This rasterizer takes in json files of parsed data from an obj file that represents a model. I then implemented classes and methods so that the model's faces could
+									be converted into triangles. These triangles were then contained within bounding boxes in order to efficiently calculate the points which edges intersect with the bounding box rows. 
+									Then, we translate the coordinates obtained from the intersections from world space to camera space to screen space to pixel space. 
+									For 3D models, perspective-correct interpolation is applied using barycentric interpolation. After all this, we have information about all fragments within the scene. I then use z-buffering to determine which fragment is shown on each pixel. 
+									Then, lighting is applied to the scene using lambertian shading. I added two extra ligting effects including blinn-phong and toon shading. 
+   								</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="https://vimeo.com/1020401342?share=copy#t=0" class="image fit thumb"><img src="images/thumbs/hw2.jpg" alt="" /></a>
+								<h3>2D Modeling Design and Scene Graph Traversal</h3>
+								<p>During my first semester in my computer graphics and game technology masters program at the University of Pennsylvania, I developed classes and methods in C++ to create and traverse scene graphs which display polygons to the screen.
+									The video above shows a 2D model of a character I designed by creating polygons and applying transformations including translation, rotation, and scaling. This model can then be modified in the GUI editor by the user. 
+								</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/TFT.jpg" class="image fit thumb"><img src="images/thumbs/TFT.jpg" alt="" /></a>
@@ -106,43 +105,59 @@
 								</p>
 							</article>
 
-							<article class="col-6 col-12-xsmall work-item">
+							<!-- <article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
 								<h3>Single Cycle and Pipelined MIPS Processor</h3>
 								<p>In my Computer Architecture Course during the fall of 2022, I designed both a single cycle and five stage pipelined mips processor. It is a 32 bit system that uses 128 address instruction and data memory. They both use a register file containing 32 registers of 32 bit width. </p>
-							</article>
+							</article> -->
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" height="275"/></a>
 								<h3>Augmented Reality Sampling Mission Tool</h3>
 								<p>In the summer of 2022, I worked at <a href="https://www.dcscorp.com/">DCS Corporation</a>. During my time here, I got the chance to design an augmented reality app that helps track information about hazards. I wrote this using Java and Kotlin and utilized Googles <a href="https://developers.google.com/ar/develop/geospatial">Geospatial API</a>. My team at the company has now picked up where I left off on the app. They are working on implementing additional functionality that I recommended.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<!-- <article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
 								<h3>Computer Architecture Security Research</h3>
 								<p>In early 2022, I was given the opportunity to begin research with a professor. We decided to work on implementing lightweight encryption methods to add to a pipelined processor. The purpose of this is to prevent malicious attackers from reading or changing data in memory and in the pipeline registers. To accomplish this, we have used a hardware description language called chisel. Using chisel, we can work in an object oriented environment while generating verilog files to test in Synopsys.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							</article> -->
+							<!-- <article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" height="225"/></a>
 								<h3>VHDL Component Generators</h3>
 								<p>In my digitial electronics course, I had the opportunity to create and design a handful of VHDL components including adders, multipliers, matrix multipliers, read only memory, hex LEDs, and much more. I performed register-transfer level simulations on these components by using modelsim. The left image above shows a generic adder which can generate an adder that can add two binary numbers of any width. The right is a generic matrix multipler which can multiply an NxN matrix with an Nx1 matrix.</p>
-							</article>
+							</article> -->
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
 								<h3>Oracle SQL Hotel Database</h3>
 								<p>In my sophomore year, I took principles of database systems. I was introduced to relational and nonrelational databases. For my final project, I designed a database that a hotel company could use in Oracle SQL. I created an entity relation diagram which displays all the entities, their attributes, and how they link to each other. Then, I populated the database with data and ran queries.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<!-- <article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" height="265"/></a>
 								<h3>Matlab Image Classifier</h3>
 								<p>In the spring of 2022, I worked in a group to design a pseudo-machine learning algorithm in Matlab. Our task was to make a program that could predict what category a satelite image belonged to. The five categories were baseball diamond, beach, chaparral, forest, and river. Our algorithm seperated images into smaller tiles in which color values were averaged. Then, these average values were used to create rules for each category. When posed with a new image, the algortihm compared the new image to each category using distance values. The results can be found in the confusion matrix above showing the accuracy in blue for each category.</p>
-							</article>
+							</article> -->
 							
 						</div>
 						<ul class="actions">
 							<li><a href="images/fulls/resume.jpg" class="button">Resume</a></li>
 						</ul>
 					</section>
-
+					<header class="major">
+						<h2>Experience</h2>
+					</header>
+					<p>
+						For my most recent internship during 2023, I worked at <a href="https://www.jhuapl.edu/">The Johns Hopkins Applied Physics Lab</a> in the Air and Missile Defense Sector as a software engineer. I contributed to the development of machine learning models which aimed to decrease the runtime of missile trajectory calculation. I also designed protocol for modules within software designed by APL and Lockheed known as <a href="https://www.youtube.com/watch?v=dkGYq1kUNcY">Cerberus</a>.
+					</p>
+					<p>
+						During the summer of 2022, I worked at <a href="https://www.dcscorp.com/">DCS Corporation</a> as a software engineer. My first project of the summer was creating 3D assets for a virtual reality software used by the military called <a href="https://virtualheroes.com/cs-virtual-tactical-assault-kit/">Virtual Tactical Assault Kit</a>. Then, I helped debug and add functionality to an android application used to read and track radiation sensors. I also worked on developing extentions to an another military application called <a href="https://www.civtak.org/">Android Team Awareness Kit</a>. Finally, I developed a brand new augmented reality application used to create sampling missions for ground troops in areas effected by hazardous warfare. More info on this can be found below.
+					</p>
+					<p>
+						In the summer of 2021 I worked at <a href="https://www.stanleyblackanddecker.com/">Stanley Black and Decker</a> as an electrical engineer. I had the opportunity to work on a team of mechanical and electrical engineers developing new hand tools. During the summer, I 3D-printed parts for tools, tested circuits, and designed testing modules to aid the design of various equipment. I also worked in a multidisciplinary project in which I led a group of finance, buisness, and engineering interns. We developed a marking strategy based on sales data we analyzed using a machine learning algorithm in Python.
+					</p>
+					
+					<!-- <ul class="actions">
+						<li><a href="#" class="button">Learn More</a></li>
+					</ul> -->
+				</section>
 					
 					<section>
 						<h2>Education</h2>
