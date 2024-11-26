@@ -60,77 +60,109 @@
 					<section id="two">
 						<h1>Recent Work</h1>
 						<div class="row">
-							 <article class="col-6 col-12-xsmall work-item">
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="https://vimeo.com/1031795677?share=copy" class="image fit thumb"><img src="images/thumbs/minecraft.jpg" alt="" /></a>
+								<h3>C++ and OpenGL Mini-Minecraft Project</h3>
+								<p>
+									This video showcases a group project I participated in with the goal of developing our own implementation of minecraft.
+									I worked in a group of three other students and we each selected a handful of features to implement for the game.
+									We organized ourselves by using Github and properly managed feature integration by creating branches and pull requests to merge features upon completion.
+									I was responsible for implementing player physics including player movement, player controls, collision detection, and breaking/placing blocks.
+									I also implemented efficient rendering using multithreading. This required me to work with my teammates to learn how they implemented procedural terrain.
+									I then used this understanding to correctly create workers for multithreading to generate terrain data as well as vertex buffer data for openGL to render.
+									My next feature that will be implemented will be screen space reflections and lighting using deferred rendering techniques.
+								</p>
+							</article>
+
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="https://vimeo.com/1033639677?share=copy" class="image fit thumb"><img src="images/thumbs/fkik.jpg" alt="" /></a>
+								<h3>Forward/Inverse Kinematic Solver and Skinning</h3>
+								<p>
+									This video showcases a tool I worked on that implemented forward and inverse kinematic solvers. I was responsible for writing code which 
+									could solve forward kinematics which is used to tell a player skeleton how to move given certain inputs. In this case, the inputs were BVH files
+									of various animations as shown in the video. Next, I added functionality for inverse kinematics usinng both limb based and cyclic cordinate descent such that the user can control the position of certain
+									joints on the player skeleton. Finally, I implemented a binding skinning tool which allows the base skin of the character to be rebinded to other skins using the linear blending skinning technique. 
+								</p>
+							</article>
+
+
+
+
+							<article class="col-6 col-12-xsmall work-item">
 								<a href="https://vimeo.com/1020405046?share=copy#t=0" class="image fit thumb"><img src="images/thumbs/hw5.jpg" alt="" /></a>
 								<h3>OpenGL Post Processing Effects with Custom Vertex and Fragment Shaders</h3>
-								<p>This video showcases a project where I implemented a variety of post processing effects as well as some vertex and fragment shaders.
+								<p>
+									This video showcases a project where I implemented a variety of post processing effects as well as some vertex and fragment shaders.
 									This project was done in OpenGL and C++. A framework code base was given to me and I was responsible for understanding the base code so that I could implement these concepts. The vertex and fragment shaders calculated
-									the visual effect for blinn-phong lighting and also performed texture sampling for matcap. The last surface shader is a custom one which deforms the vertices by mixing values between the base model and a sphere while 
-									interpolating color based on time and distance from the center of the frame. Post processing effects can then be applied to the surface shaded frame. These included a sobel and gaussian blur filter along with a custom 
+									the visual effect for blinn-phong lighting and also performed texture sampling for matcap. The last surface shader is a custom one which deforms the vertices by mixing values between the base model and a sphere while
+									interpolating color based on time and distance from the center of the frame. Post processing effects can then be applied to the surface shaded frame. These included a sobel and gaussian blur filter along with a custom
 									filter which applies a worley noise based effect creating a mosaic-like image
 								</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="https://vimeo.com/1020403716" class="image fit thumb"><img src="images/thumbs/hw3.jpg" alt="" /></a>
 								<h3>C++ Rasterizer and Custom Lighting</h3>
-								<p> The video above displays a project in which I implemented the an entire rasterizer pipeline in C++ and OpenGL. I was given a base code in which I 
+								<p>
+									The video above displays a project in which I implemented the an entire rasterizer pipeline in C++ and OpenGL. I was given a base code in which I
 									needed to analyze and implement my own full 2D and 3D rasterizer. This rasterizer takes in json files of parsed data from an obj file that represents a model. I then implemented classes and methods so that the model's faces could
-									be converted into triangles. These triangles were then contained within bounding boxes in order to efficiently calculate the points which edges intersect with the bounding box rows. 
-									Then, we translate the coordinates obtained from the intersections from world space to camera space to screen space to pixel space. 
-									For 3D models, perspective-correct interpolation is applied using barycentric interpolation. After all this, we have information about all fragments within the scene. I then use z-buffering to determine which fragment is shown on each pixel. 
-									Then, lighting is applied to the scene using lambertian shading. I added two extra ligting effects including blinn-phong and toon shading. 
-   								</p>
+									be converted into triangles. These triangles were then contained within bounding boxes in order to efficiently calculate the points which edges intersect with the bounding box rows.
+									Then, we translate the coordinates obtained from the intersections from world space to camera space to screen space to pixel space.
+									For 3D models, perspective-correct interpolation is applied using barycentric interpolation. After all this, we have information about all fragments within the scene. I then use z-buffering to determine which fragment is shown on each pixel.
+									Then, lighting is applied to the scene using lambertian shading. I added two extra ligting effects including blinn-phong and toon shading.
+								</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="https://vimeo.com/1020401342?share=copy#t=0" class="image fit thumb"><img src="images/thumbs/hw2.jpg" alt="" /></a>
 								<h3>2D Modeling Design and Scene Graph Traversal</h3>
-								<p>During my first semester in my computer graphics and game technology masters program at the University of Pennsylvania, I developed classes and methods in C++ to create and traverse scene graphs which display polygons to the screen.
-									The video above shows a 2D model of a character I designed by creating polygons and applying transformations including translation, rotation, and scaling. This model can then be modified in the GUI editor by the user. 
+								<p>
+									During my first semester in my computer graphics and game technology masters program at the University of Pennsylvania, I developed classes and methods in C++ to create and traverse scene graphs which display polygons to the screen.
+									The video above shows a 2D model of a character I designed by creating polygons and applying transformations including translation, rotation, and scaling. This model can then be modified in the GUI editor by the user.
 								</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/TFT.jpg" class="image fit thumb"><img src="images/thumbs/TFT.jpg" alt="" /></a>
 								<h3>Applied Machine Learning Projects</h3>
-								<p> During my junior and senior year, I took an undergraduate and graduate course in applied machine learning. I completed two fully developed machine
-									learning models in these classes. The first model aimed to predict how well a song would perform on youtube and spotify given information about the song's 
-									genre, beat, tempo, and much more. The accuracy of the model reached 94.3% in predicting whether or not a song's like to view ratio would be above a threshold 
+								<p>
+									During my junior and senior year, I took an undergraduate and graduate course in applied machine learning. I completed two fully developed machine
+									learning models in these classes. The first model aimed to predict how well a song would perform on youtube and spotify given information about the song's
+									genre, beat, tempo, and much more. The accuracy of the model reached 94.3% in predicting whether or not a song's like to view ratio would be above a threshold
 									provided by the user. The second model I developed was a classification model for predicting a player's probability of winning the game Team Fight Tactics developed
-									by Riot Games. This model was trained to have a fundamental understanding of the game by analyzing information including augment selection, active traits, 
+									by Riot Games. This model was trained to have a fundamental understanding of the game by analyzing information including augment selection, active traits,
 									units, and items to determine whether or not the player would win or lose. Both of these models were trained using Python, Scikit Learn, and Pytorch.
 								</p>
 							</article>
 
 							<!-- <article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-								<h3>Single Cycle and Pipelined MIPS Processor</h3>
-								<p>In my Computer Architecture Course during the fall of 2022, I designed both a single cycle and five stage pipelined mips processor. It is a 32 bit system that uses 128 address instruction and data memory. They both use a register file containing 32 registers of 32 bit width. </p>
-							</article> -->
+		<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+		<h3>Single Cycle and Pipelined MIPS Processor</h3>
+		<p>In my Computer Architecture Course during the fall of 2022, I designed both a single cycle and five stage pipelined mips processor. It is a 32 bit system that uses 128 address instruction and data memory. They both use a register file containing 32 registers of 32 bit width. </p>
+	</article> -->
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" height="275"/></a>
+								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" height="275" /></a>
 								<h3>Augmented Reality Sampling Mission Tool</h3>
 								<p>In the summer of 2022, I worked at <a href="https://www.dcscorp.com/">DCS Corporation</a>. During my time here, I got the chance to design an augmented reality app that helps track information about hazards. I wrote this using Java and Kotlin and utilized Googles <a href="https://developers.google.com/ar/develop/geospatial">Geospatial API</a>. My team at the company has now picked up where I left off on the app. They are working on implementing additional functionality that I recommended.</p>
 							</article>
 							<!-- <article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Computer Architecture Security Research</h3>
-								<p>In early 2022, I was given the opportunity to begin research with a professor. We decided to work on implementing lightweight encryption methods to add to a pipelined processor. The purpose of this is to prevent malicious attackers from reading or changing data in memory and in the pipeline registers. To accomplish this, we have used a hardware description language called chisel. Using chisel, we can work in an object oriented environment while generating verilog files to test in Synopsys.</p>
-							</article> -->
+		<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
+		<h3>Computer Architecture Security Research</h3>
+		<p>In early 2022, I was given the opportunity to begin research with a professor. We decided to work on implementing lightweight encryption methods to add to a pipelined processor. The purpose of this is to prevent malicious attackers from reading or changing data in memory and in the pipeline registers. To accomplish this, we have used a hardware description language called chisel. Using chisel, we can work in an object oriented environment while generating verilog files to test in Synopsys.</p>
+	</article> -->
 							<!-- <article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" height="225"/></a>
-								<h3>VHDL Component Generators</h3>
-								<p>In my digitial electronics course, I had the opportunity to create and design a handful of VHDL components including adders, multipliers, matrix multipliers, read only memory, hex LEDs, and much more. I performed register-transfer level simulations on these components by using modelsim. The left image above shows a generic adder which can generate an adder that can add two binary numbers of any width. The right is a generic matrix multipler which can multiply an NxN matrix with an Nx1 matrix.</p>
-							</article> -->
+		<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" height="225"/></a>
+		<h3>VHDL Component Generators</h3>
+		<p>In my digitial electronics course, I had the opportunity to create and design a handful of VHDL components including adders, multipliers, matrix multipliers, read only memory, hex LEDs, and much more. I performed register-transfer level simulations on these components by using modelsim. The left image above shows a generic adder which can generate an adder that can add two binary numbers of any width. The right is a generic matrix multipler which can multiply an NxN matrix with an Nx1 matrix.</p>
+	</article> -->
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
 								<h3>Oracle SQL Hotel Database</h3>
 								<p>In my sophomore year, I took principles of database systems. I was introduced to relational and nonrelational databases. For my final project, I designed a database that a hotel company could use in Oracle SQL. I created an entity relation diagram which displays all the entities, their attributes, and how they link to each other. Then, I populated the database with data and ran queries.</p>
 							</article>
 							<!-- <article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" height="265"/></a>
-								<h3>Matlab Image Classifier</h3>
-								<p>In the spring of 2022, I worked in a group to design a pseudo-machine learning algorithm in Matlab. Our task was to make a program that could predict what category a satelite image belonged to. The five categories were baseball diamond, beach, chaparral, forest, and river. Our algorithm seperated images into smaller tiles in which color values were averaged. Then, these average values were used to create rules for each category. When posed with a new image, the algortihm compared the new image to each category using distance values. The results can be found in the confusion matrix above showing the accuracy in blue for each category.</p>
-							</article> -->
-							
+		<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" height="265"/></a>
+		<h3>Matlab Image Classifier</h3>
+		<p>In the spring of 2022, I worked in a group to design a pseudo-machine learning algorithm in Matlab. Our task was to make a program that could predict what category a satelite image belonged to. The five categories were baseball diamond, beach, chaparral, forest, and river. Our algorithm seperated images into smaller tiles in which color values were averaged. Then, these average values were used to create rules for each category. When posed with a new image, the algortihm compared the new image to each category using distance values. The results can be found in the confusion matrix above showing the accuracy in blue for each category.</p>
+	</article> -->
+
 						</div>
 						<ul class="actions">
 							<li><a href="images/fulls/resume.jpg" class="button">Resume</a></li>
