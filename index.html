@@ -17,36 +17,42 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
-
 		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h1><b>Hi, I'm Haralambos Kokkinakos</b><br />
-					<b>Welcome to my website</b><br /></h1>
-				</div>
-				<div class="labeled-icons">
-						<b>
-						443-391-6440 <br />
-						hkokkina@seas.upenn.edu</b>
-				</div>
-			</header>
-			
-
+		<header id="header">
+			<div class="inner">
+				<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="Haralambos Kokkinakos" /></a>
+				<h1>Hi, I'm Haralambos Kokkinakos.</h1>
+				<h1>Welcome to my portfolio.</h1>
+			</div>
+			<div class="labeled-icons">
+				<b>
+					443-391-6440 <br />
+					hkokkina@seas.upenn.edu
+				</b>
+			</div>
+		</header>
+		
 		<!-- Main -->
 			<div id="main">
-
 				<!-- One -->
 					<section id="one">
 						<header class="major">
 							<h2>About Me</h2>
 						</header>
 						<p>
-							I am currently a student at University of Pennsylvania in the Computer Graphics and Game Technology masters program. 
+
+							Hi, I’m Haralambos Kokkinakos, a passionate game developer and computer graphics enthusiast actively seeking opportunities to bring innovative ideas to life.
+							I'm currently pursuing my Masters Degree at the University of Pennsylvania in Computer Graphics and Game Technology after finishing my undergraduate degree in Computer Engineering at Villanova University
+							I thrive on learning cutting-edge graphics techniques and leveraging ethem to creat immersive and unique player and viewer experiences as shown in my work below.
+							My goal in my career is to apply new and interactive graphics concepts into my work such that players and viewers can have a unique and memorable experience.
+							Throughout my education and professional experiences, I have developed many skills, including machine learning, software engineering, and computer graphics, which I continue to apply in my work and personal projects.
+							Please feel free to explore my previous work by clicking on the projects below.
+
+							<!-- I am currently a student at University of Pennsylvania in the Computer Graphics and Game Technology masters program. 
 							I completed my undergraduate degree at Villanova University with a Bachelors degree in Computer Engineering.
 							I have a lot of experience in a variety of engineering and computer science environments from my internships, research, classes, and personal projects.
 							My skillset has developed to include many practical assets including machine learning, computer graphics, software engineering,and much more. 
-							This website showcases all of my most notable achievements pertaining to these skills that I have accomplished along my career path.
+							This website showcases all of my most notable achievements pertaining to these skills that I have accomplished along my career path. -->
 
 							<!--I am a senior computer engineering studying at Villanova University with a minor in computer science. 
 							My goal as a computer engineer is to be a versatile problem solver. 
@@ -55,25 +61,22 @@
 							I am also teaching myself game design in Unreal Engine 5 where I am working on my own RPG. 
 							Finally, I currently a teaching assistant for the department of electrical and computer engineering here at Villanova.-->
 						</p>
-
 				<!-- Two -->
 					<section id="two">
 						<h1>Recent Work</h1>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://vimeo.com/1031795677?share=copy" class="image fit thumb"><img src="images/thumbs/minecraft.jpg" alt="" /></a>
+								<a href="https://vimeo.com/1037538456?share=copy" class="image fit thumb"><img src="images/thumbs/minecraft.jpg" alt="" /></a>
 								<h3>C++ and OpenGL Mini-Minecraft Project</h3>
 								<p>
 									This video showcases a group project I participated in with the goal of developing our own implementation of minecraft.
-									I worked in a group of three other students and we each selected a handful of features to implement for the game.
-									We organized ourselves by using Github and properly managed feature integration by creating branches and pull requests to merge features upon completion.
 									I was responsible for implementing player physics including player movement, player controls, collision detection, and breaking/placing blocks.
-									I also implemented efficient rendering using multithreading. This required me to work with my teammates to learn how they implemented procedural terrain.
-									I then used this understanding to correctly create workers for multithreading to generate terrain data as well as vertex buffer data for openGL to render.
-									My next feature that will be implemented will be screen space reflections and lighting using deferred rendering techniques.
+									I also implemented efficient rendering using multithreading. This required me to work with my teammates to learn how they implemented procedural terrain in order to create terrain data and vertex buffers using multithreading.
+									My final implemented feature was introducing a day/night cycle to the Minecraft world. To accomplish this, I developed a custom raytraced sky using noise functions to 
+									generate windy and cloudy effects. I used a handful of color palettes to represent different times and shaded the sky based on the position of the sky using raytracing.
+									Then, the time of day would determine which color palette to use and whether or not to interpolate between color palettes in order to smoothly transition between the times of day.
 								</p>
 							</article>
-
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="https://vimeo.com/1033639677?share=copy" class="image fit thumb"><img src="images/thumbs/fkik.jpg" alt="" /></a>
 								<h3>Forward/Inverse Kinematic Solver and Skinning</h3>
@@ -84,10 +87,6 @@
 									joints on the player skeleton. Finally, I implemented a binding skinning tool which allows the base skin of the character to be rebinded to other skins using the linear blending skinning technique. 
 								</p>
 							</article>
-
-
-
-
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="https://vimeo.com/1020405046?share=copy#t=0" class="image fit thumb"><img src="images/thumbs/hw5.jpg" alt="" /></a>
 								<h3>OpenGL Post Processing Effects with Custom Vertex and Fragment Shaders</h3>
@@ -131,38 +130,16 @@
 									units, and items to determine whether or not the player would win or lose. Both of these models were trained using Python, Scikit Learn, and Pytorch.
 								</p>
 							</article>
-
-							<!-- <article class="col-6 col-12-xsmall work-item">
-		<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-		<h3>Single Cycle and Pipelined MIPS Processor</h3>
-		<p>In my Computer Architecture Course during the fall of 2022, I designed both a single cycle and five stage pipelined mips processor. It is a 32 bit system that uses 128 address instruction and data memory. They both use a register file containing 32 registers of 32 bit width. </p>
-	</article> -->
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" height="275" /></a>
 								<h3>Augmented Reality Sampling Mission Tool</h3>
 								<p>In the summer of 2022, I worked at <a href="https://www.dcscorp.com/">DCS Corporation</a>. During my time here, I got the chance to design an augmented reality app that helps track information about hazards. I wrote this using Java and Kotlin and utilized Googles <a href="https://developers.google.com/ar/develop/geospatial">Geospatial API</a>. My team at the company has now picked up where I left off on the app. They are working on implementing additional functionality that I recommended.</p>
 							</article>
-							<!-- <article class="col-6 col-12-xsmall work-item">
-		<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-		<h3>Computer Architecture Security Research</h3>
-		<p>In early 2022, I was given the opportunity to begin research with a professor. We decided to work on implementing lightweight encryption methods to add to a pipelined processor. The purpose of this is to prevent malicious attackers from reading or changing data in memory and in the pipeline registers. To accomplish this, we have used a hardware description language called chisel. Using chisel, we can work in an object oriented environment while generating verilog files to test in Synopsys.</p>
-	</article> -->
-							<!-- <article class="col-6 col-12-xsmall work-item">
-		<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" height="225"/></a>
-		<h3>VHDL Component Generators</h3>
-		<p>In my digitial electronics course, I had the opportunity to create and design a handful of VHDL components including adders, multipliers, matrix multipliers, read only memory, hex LEDs, and much more. I performed register-transfer level simulations on these components by using modelsim. The left image above shows a generic adder which can generate an adder that can add two binary numbers of any width. The right is a generic matrix multipler which can multiply an NxN matrix with an Nx1 matrix.</p>
-	</article> -->
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
 								<h3>Oracle SQL Hotel Database</h3>
 								<p>In my sophomore year, I took principles of database systems. I was introduced to relational and nonrelational databases. For my final project, I designed a database that a hotel company could use in Oracle SQL. I created an entity relation diagram which displays all the entities, their attributes, and how they link to each other. Then, I populated the database with data and ran queries.</p>
 							</article>
-							<!-- <article class="col-6 col-12-xsmall work-item">
-		<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" height="265"/></a>
-		<h3>Matlab Image Classifier</h3>
-		<p>In the spring of 2022, I worked in a group to design a pseudo-machine learning algorithm in Matlab. Our task was to make a program that could predict what category a satelite image belonged to. The five categories were baseball diamond, beach, chaparral, forest, and river. Our algorithm seperated images into smaller tiles in which color values were averaged. Then, these average values were used to create rules for each category. When posed with a new image, the algortihm compared the new image to each category using distance values. The results can be found in the confusion matrix above showing the accuracy in blue for each category.</p>
-	</article> -->
-
 						</div>
 						<ul class="actions">
 							<li><a href="images/fulls/resume.jpg" class="button">Resume</a></li>
@@ -180,20 +157,15 @@
 					<p>
 						In the summer of 2021 I worked at <a href="https://www.stanleyblackanddecker.com/">Stanley Black and Decker</a> as an electrical engineer. I had the opportunity to work on a team of mechanical and electrical engineers developing new hand tools. During the summer, I 3D-printed parts for tools, tested circuits, and designed testing modules to aid the design of various equipment. I also worked in a multidisciplinary project in which I led a group of finance, buisness, and engineering interns. We developed a marking strategy based on sales data we analyzed using a machine learning algorithm in Python.
 					</p>
-					
-					<!-- <ul class="actions">
-						<li><a href="#" class="button">Learn More</a></li>
-					</ul> -->
 				</section>
-					
 					<section>
 						<h2>Education</h2>
 						<h3>University of Pennsylvania</h3>
 						<p><b>Major:</b> Masters of Engineering in Computer Graphics and Game Technology<bsr />
 						</p>
-						<!--<b>GPA:</b> /4.0<br />
-						<p>-->
-							<b>Relevant Courses:</b>  Interactive Computer Graphics, Computer Animation, 3-D Computer Modeling
+						<b>GPA:</b> 3.90/4.0<br />
+						<p>
+							<b>Relevant Courses:</b>  Interactive Computer Graphics, Computer Animation, 3-D Computer Modeling, Advanced Computer Graphics, Advanced Topics in Computer Graphics and Animation, Game Design and Development
 						</p>
 						<h3>Villanova University</h3>
 						<p><b>Major:</b> Bachelors of Science in Computer Engineering<br />
@@ -214,10 +186,8 @@
 							<b>GPA:</b> 4.08/4.5
 						</p>
 					</section>
-
 					<section>
 						<h2>Certificates</h2>
-						
 						<article class="col-6 col-12-xsmall work-item">
 							<h3>Johns Hopkins Engineering Innovation</h3>
 							<a href="images/fulls/HopkinsTranscript.jpg" class=""image fit thumb ><img src="images/fulls/HopkinsTranscript.jpg" alt="" width="400" height="500"></a>
@@ -227,15 +197,12 @@
 							<h3>Villanova Leadership Program</h3>
 							<a href="images/fulls/VLP.jpg" class=""image fit thumb ><img src="images/fulls/VLP.jpg" alt="" width="400" height="500"></a>
 						</article>
-						
 					</section>
-
 					<section>
 						<h2>Vex Robotics</h2>
 						<h3>Tower Takeover 2019-2020</h3>
 						<p>2020 Maryland State Championship Finalist, World Championship Contestant</p>
-						<div class="row">
-							
+						<div class="row">							
 						<article class="col-6 col-12-xsmall work-item">
 							<a href="images/Robotics/2020 Robot/Robot1.jpg" class="image fit thumb" ><img src="images/Robotics/2020 Robot/Robot1.jpg" alt="" width="50" height="300"/></a>
 							<h3></h3>
@@ -256,8 +223,6 @@
 							<h3></h3>
 							<p></p>
 						</article>
-
-
 					</div>
 					<div>
 					<h3>Tower Takeover 2018-2019</h3>
@@ -268,379 +233,13 @@
 							  Your browser does not support the video tag.
 							</video>
 					</div>
-
 					<div>
 						<h3>Turning Point 2017-2018</h3>
 						<p>2018 Maryland State Championship Quarterfinalist</p>
-
 					</div>
-						
-						
-						
-					</section>
-
-
-
-
-					
-				<!-- Last -->
-					<!-- <section id="last">
-						<h2>Get In Touch</h2>
-						<p></p>
-						<div class="row">
-							<div class="col-8 col-12-small">
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										800 East Lancaster Rd.<br />
-										Villanova, PA 19085<br />
-										United States
-									</li>
-									<li>
-										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										443-391-6440
-									</li>
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="#">hkokkina@villanova.edu</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section> -->
-
-				<!-- Four -->
-				<!--
-					<section id="four">
-						<h2>Elements</h2>
-
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
-
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="col-6 col-12-xsmall">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
-
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Primary</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
-
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
-
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row gtr-50 gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
-
-					</section>
-				-->
+				 </section>
 
 			</div>
-
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
@@ -654,7 +253,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					</ul>
 				</div>
 			</footer>
-
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
