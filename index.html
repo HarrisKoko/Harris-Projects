@@ -66,13 +66,24 @@
 						<h1>Recent Work</h1>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
+								<a href="https://vimeo.com/1061643722?share=copy" class="image fit thumb"><img src="images/thumbs/PTTN.jpg" alt="" /></a>
+								<h3>GLSL Monte Carlo Path Tracer</h3>
+								<p>
+									The video above is a demonstration of my implementation of a Monte Carlo Path Tracer in GLSL. This project had several steps, starting with the implementations of warping functions.
+									These warping functions are used by the path tracer to randomly generate rays such that the path tracer can correctly simulate lambertian shading. The probability density functions for these
+									warping functions are also calculated. Then, I implemented a naive variation of the Monte Carlo Path Tracer. This recursively bounces ray up to a specified number of times and solves the light transport equation.
+									Then, I implemented light source sampling, which bounces rays once directly towards a light source, checking for visibility to that light source. I was then able to combine both of these implementations into a multiple imporance sampling 
+									path tracer. Finally, I added recursion to the multiple importance sampling path tracer, representing the full path tracer.
+								</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
 								<a href="https://vimeo.com/1037538456?share=copy" class="image fit thumb"><img src="images/thumbs/minecraft.jpg" alt="" /></a>
 								<h3>C++ and OpenGL Mini-Minecraft Project</h3>
 								<p>
 									This video showcases a group project I participated in with the goal of developing our own implementation of minecraft.
 									I was responsible for implementing player physics including player movement, player controls, collision detection, and breaking/placing blocks.
 									I also implemented efficient rendering using multithreading. This required me to work with my teammates to learn how they implemented procedural terrain in order to create terrain data and vertex buffers using multithreading.
-									My final implemented feature was introducing a day/night cycle to the Minecraft world. To accomplish this, I developed a custom raytraced sky using noise functions to 
+									My final implemented feature was introducing a day/night cycle to the Minecraft world. To accomplish this, I developed a custom raytraced sky using noise functions to
 									generate windy and cloudy effects. I used a handful of color palettes to represent different times and shaded the sky based on the position of the sky using raytracing.
 									Then, the time of day would determine which color palette to use and whether or not to interpolate between color palettes in order to smoothly transition between the times of day.
 								</p>
@@ -81,10 +92,10 @@
 								<a href="https://vimeo.com/1033639677?share=copy" class="image fit thumb"><img src="images/thumbs/fkik.jpg" alt="" /></a>
 								<h3>Forward/Inverse Kinematic Solver and Skinning</h3>
 								<p>
-									This video showcases a tool I worked on that implemented forward and inverse kinematic solvers. I was responsible for writing code which 
+									This video showcases a tool I worked on that implemented forward and inverse kinematic solvers. I was responsible for writing code which
 									could solve forward kinematics which is used to tell a player skeleton how to move given certain inputs. In this case, the inputs were BVH files
 									of various animations as shown in the video. Next, I added functionality for inverse kinematics usinng both limb based and cyclic cordinate descent such that the user can control the position of certain
-									joints on the player skeleton. Finally, I implemented a binding skinning tool which allows the base skin of the character to be rebinded to other skins using the linear blending skinning technique. 
+									joints on the player skeleton. Finally, I implemented a binding skinning tool which allows the base skin of the character to be rebinded to other skins using the linear blending skinning technique.
 								</p>
 							</article>
 
@@ -148,10 +159,10 @@
 								<p>In the summer of 2022, I worked at <a href="https://www.dcscorp.com/">DCS Corporation</a>. During my time here, I got the chance to design an augmented reality app that helps track information about hazards. I wrote this using Java and Kotlin and utilized Googles <a href="https://developers.google.com/ar/develop/geospatial">Geospatial API</a>. My team at the company has now picked up where I left off on the app. They are working on implementing additional functionality that I recommended.</p>
 							</article>
 							<!-- <article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>Oracle SQL Hotel Database</h3>
-								<p>In my sophomore year, I took principles of database systems. I was introduced to relational and nonrelational databases. For my final project, I designed a database that a hotel company could use in Oracle SQL. I created an entity relation diagram which displays all the entities, their attributes, and how they link to each other. Then, I populated the database with data and ran queries.</p>
-							</article> -->
+		<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+		<h3>Oracle SQL Hotel Database</h3>
+		<p>In my sophomore year, I took principles of database systems. I was introduced to relational and nonrelational databases. For my final project, I designed a database that a hotel company could use in Oracle SQL. I created an entity relation diagram which displays all the entities, their attributes, and how they link to each other. Then, I populated the database with data and ran queries.</p>
+	</article> -->
 						</div>
 						<ul class="actions">
 							<li><a href="images/fulls/resume.jpg" class="button">Resume</a></li>
