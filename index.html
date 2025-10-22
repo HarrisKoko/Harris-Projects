@@ -41,9 +41,9 @@
 						</header>
 						<p>
 
-							Hi, I’m Haralambos Kokkinakos, a passionate game developer and computer graphics enthusiast actively seeking opportunities to bring innovative ideas to life.
+							Hi, I’m Haralambos Kokkinakos, a passionate game developer and computer graphics enthusiast actively seeking opportunities in gameplay and/or graphics engineering starting in Winter 2026.
 							I'm currently pursuing my Masters Degree at the University of Pennsylvania in Computer Graphics and Game Technology after finishing my undergraduate degree in Computer Engineering at Villanova University
-							I thrive on learning cutting-edge graphics techniques and leveraging ethem to creat immersive and unique player and viewer experiences as shown in my work below.
+							I thrive on learning cutting-edge graphics techniques and leveraging them to create immersive and unique player and viewer experiences as shown in my work below.
 							My goal in my career is to apply new and interactive graphics concepts into my work such that players and viewers can have a unique and memorable experience.
 							Throughout my education and professional experiences, I have developed many skills, including machine learning, software engineering, and computer graphics, which I continue to apply in my work and personal projects.
 							Please feel free to explore my previous work by clicking on the projects below.
@@ -68,14 +68,42 @@
 					<section id="two">
 						<h1>Recent Work</h1>
 						<div class="row">
+
+							<article class="col-6 col-12-xsmall work-item">
+								<!-- Thumbnail no longer an anchor, so lightbox won't hijack it -->
+								<span class="image fit thumb">
+									<img src="images/thumbs/WebGPU.png" alt="WebGPU preview" />
+								</span>
+								<h3>
+									<a href="https://github.com/HarrisKoko" target="_blank" rel="noopener">
+									GPU Programming and Architecture Projects
+									</a>
+								</h3>
+								<p>
+									During the Fall 2025 semester, I took the course GPU Programming and Architecture CIS5650 at the University of Pennsylvania. This course is widely known for its difficulty, attention to detail in optimization, and ability to teach complex topics in GPU programming and graphics. Thus far, I have implemented 
+									boid simluation, stream compaction, and path tracing in CUDA as well as forward+ and clustered deferred rendering in WebGPU. Additionally, these are open source and my repositories for them can be found on my github profile accesible from the linked title above. The READMEs for these projects include detailed descriptions
+									about the implementations of each project, results, and a performance analysis. 
+								</p>
+							</article>
+
+
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="https://vimeo.com/1129625139?share=copy&fl=sv&fe=ci" class="image fit thumb"><img src="images/thumbs/invaders.png" alt="" /></a>
+								<h3>Unity Space Invaders Remake</h3>
+								<p>
+									As part of my Game Design Practicum course, I implemented a remake of the classic game Space Invaders. This remake was done in Unity using 3D assets and realistic physics. In addition to the original game's features, I implemented additional features which enables adds more resource management to the game.
+									The player starts with limited ammo. Ammo is used when the player fires bullets as the aliens. When a shot is fired, it eventually comes back down to the platform at the bottom of the screen. In order to reload, the player must push ammo off the sides of the platform or wait for it to regenerate.
+								</p>
+							</article>
+
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="https://vimeo.com/1108579296?share=copy" class="image fit thumb"><img src="images/thumbs/indepThumb.jpg" alt="" /></a>
-								<h3>GLSL Monte Carlo Path Tracer</h3>
+								<h3>Facial Animation Machine Learning</h3>
 								<p>
 									During the summer of 2025, I worked under Dr. Stephen Lane on an independent study aimed at developing a pipeline for character animation using artificial intelligence. The purpose of the study was to 
 									find a method of obtaining character animation from an AI generated video of a character. In order to accomplish this, I generated AI videos of a character and used a differentiable rendering to 
 									calculate the error between frames of the AI generated video and the model of the character. Then, I trained a neural network to predict the blendshapes and reduce the error between the video and the models predicted blendshapes. 
-									The model was trained using thousands of variations of the model's face rendered with randomized blendshapes. The result is thwe video above which showcases how accurately the model can predict blendshapes even in instances where the
+									The model was trained using thousands of variations of the model's face rendered with randomized blendshapes. The result is the video above which showcases how accurately the model can predict blendshapes even in instances where the
 									character in the AI generated video has neck movement. The model also outputs a csv file containing the blendshape values at each frame so that the character can be animated in game engines like Unreal Engine and Unity.
 								</p>
 							</article>
@@ -102,6 +130,16 @@
 									Then, the time of day would determine which color palette to use and whether or not to interpolate between color palettes in order to smoothly transition between the times of day.
 								</p>
 							</article>
+
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="https://vimeo.com/1129608999?share=copy&fl=sv&fe=ci" class="image fit thumb"><img src="images/thumbs/behavior.jpg" alt="" /></a>
+								<h3>NPC AI Behavior Animation Tool</h3>
+								<p>
+									A project I had the opportunity to work on during my Computer Animation course was an NPC AI Behavior animation tool. In this project, I implemented a variety of AI behvaiors including seek, flee, arrival, departure, wander, obstacle avoidance, separation, cohesion, and alignment.
+									This tool can additionally be extended into a Unity plugin to solve for character walking animations when combined with my forward/inverse kinematics and skinning solvers. The behavior implementations were coded in C++ and the graphic interface utilizes OpenGL, IMGui, and additional 3rd party llibraries. 
+								</p>
+							</article>
+
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="https://vimeo.com/1033639677?share=copy" class="image fit thumb"><img src="images/thumbs/fkik.jpg" alt="" /></a>
 								<h3>Forward/Inverse Kinematic Solver and Skinning</h3>
